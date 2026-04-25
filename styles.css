@@ -70,18 +70,6 @@ body::before {
   bottom: -4.5rem;
 }
 
-.seal {
-  display: inline-block;
-  margin: 0 0 1rem;
-  padding: 0.45rem 0.8rem;
-  color: var(--black);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  background: var(--brass);
-}
-
 h1 {
   margin: 0 0 1rem;
   color: #fff7e6;
@@ -90,6 +78,18 @@ h1 {
   line-height: 0.95;
   text-transform: uppercase;
   text-shadow: 0 0 1rem rgb(217 43 34 / 70%);
+}
+
+h1 span {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--brass);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(0.95rem, 3vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.35;
+  text-shadow: none;
 }
 
 p {
