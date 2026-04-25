@@ -7,6 +7,7 @@
     <title>Adeptus Statisticus</title>
     <link rel="icon" href="favicon.webp" type="image/webp">
     <link rel="stylesheet" href="styles.css">
+    <script src="littany_of_calculation.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -20,27 +21,26 @@
         </section>
         <section class="forms">
 
-            <form class="model-form" id="attacker">
-
+            <form class="model-form" id="attacker" action="/index.html" method="get">
                 <h2>Attaquant</h2>
 
                 <h3>Mélée</h3>
 
                 <label for="A_A">Nombre d'attaques</label>
-                <input id="A_A" type="number" min="1" max="100">
+                <input name="A_A" id="A_A" type="number" min="1" max="100">
 
                 <label for="A_WS">Capacité de combat</label>
-                <input id="A_WS" type="number" min="2" max="6">
+                <input name="A_WS" id="A_WS" type="number" min="2" max="6">
 
                 <label for="A_S">Force</label>
-                <input id="A_S" type="number" min="1" max="100">
+                <input name="A_S" id="A_S" type="number" min="1" max="100">
 
                 <label for="A_AP">Pénétration d'armure</label>
-                <input id="A_AP" type="number" min="-7" max="0">
+                <input name="A_AP" id="A_AP" type="number" min="-7" max="0">
 
                 <label for="A_D">Dégats</label>
                 <div class="inline-inputs">
-                    <input id="A_D_DM" type="number">
+                    <input name="A_D_DM" id="A_D_DM" type="number">
                     <span>d</span>
                     <select>
                         <option value="0"></option>
@@ -48,25 +48,25 @@
                         <option value="6">6</option>
                     </select>
                     <span>+</span>
-                    <input id="A_D_FB" type="number" min="0" max="50">
+                    <input name="A_D_FB" id="A_D_FB" type="number" min="0" max="50">
                 </div>
 
                 <h2>Défenseur</h2>
 
                 <label for="D_T">Endurance</label>
-                <input id="D_T" type="number" min="1" max="100">
+                <input name="D_T" id="D_T" type="number" min="1" max="100">
 
                 <label for="D_S">Sauvegarde</label>
-                <input id="D_S" type="number" min="2" max="7">
+                <input name="D_S" id="D_S" type="number" min="2" max="7">
 
                 <label for="D_SI">Sauvegarde invulnérable</label>
-                <input id="D_SI" type="number" min="0" max="6">
+                <input name="D_SI" id="D_SI" type="number" min="0" max="6">
 
                 <label for="D_W">Blessures</label>
-                <input id="D_W" type="number" min="1">
+                <input name="D_W" id="D_W" type="number" min="1">
 
                 <label for="D_FNP">Insensible à la douleur</label>
-                <input id="D_FNP" type="number" min="0" max="6">
+                <input name="D_FNP" id="D_FNP" type="number" min="0" max="6">
 
                 <input value="Cogiter" type="submit">
             </form>
